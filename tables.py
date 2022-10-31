@@ -1,3 +1,6 @@
+import csv
+
+
 class Tables:
     def __init__(self) -> None:
         pass
@@ -68,15 +71,21 @@ class Tables:
             39:"reaper",
             40:"sage"
         }
-        #if jobs.get(job) is None:
-        #    return f"ID {job} is not a valid race ID"
         return jobs.get(job) if job < len(jobs)+1 else "Other" 
     def title(self,titleID):
-        import csv
-
         with open("titles.csv", "r") as titles:
             reader = csv.reader(titles)
             for col in reader:
-                if col[0] == str(titleID):
+                if col[0] == titleID:
                     return (col[1],col[2])
-                    break
+
+    def grandCompany(self,gcID):
+        companies = {
+            0:"None",             
+            1:"Maelstrom",
+            2:"Order of the Twin Adder",
+            3:"Immortal Flames",        
+        }
+        return companies.get(gcID) if gcID < len(companies)+1 else "Other"
+
+
