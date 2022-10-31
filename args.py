@@ -5,7 +5,7 @@ class Args:
         pass
 
     def ff_args(self):
-        parser = argparse.ArgumentParser(description="cli")
+        parser = argparse.ArgumentParser()
 
         parser.add_argument(
             "-v","--verbose",
