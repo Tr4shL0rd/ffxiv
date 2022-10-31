@@ -90,28 +90,30 @@ def current_job():
     return request_data["Character"]["ActiveClassJob"]["UnlockedState"]["Name"]
 
 
-def details():
+def character_details():
     char_data = request_data.get("Character")
     if char_data is None:
         rprint(f"[red underline]ID {args.id} could not be found![/red underline]")
         exit()
     
-    rprint("[green underline]DETAILS[/green underline]")
-    server = f'{char_data["Server"]}'
-    data_center = char_data["DC"]
+    rprint("[green underline]CHARACTER[/green underline]")
+    server               = char_data["Server"]
+    data_center          = char_data["DC"]
 
-    char_name = f'{char_data["Name"]}'
-    char_free_company = char_data["FreeCompanyName"]
-    char_bio = char_data["Bio"]
-    char_nameday = char_data["Nameday"]
-    char_gender = char_data["Gender"]
-    char_race = char_data["Race"]
-    char_job = char_data["ActiveClassJob"]["UnlockedState"]["Name"]
-    char_job_lvl = char_data["ActiveClassJob"]["Level"]
-
-    rprint(f"\t[underline]SERVER:[/underline] {server:>12}【{data_center}】")
+    char_name            = char_data["Name"]
+    char_free_company    = char_data["FreeCompanyName"]
+    char_bio             = char_data["Bio"]
+    char_nameday         = char_data["Nameday"]
+    char_gender          = char_data["Gender"]
+    char_race            = char_data["Race"]
+    char_job             = char_data["ActiveClassJob"]["UnlockedState"]["Name"]
+    char_job_lvl         = char_data["ActiveClassJob"]["Level"]
+    char_title,is_prefix = tables.title(char_data["Title"])
+    title_name = f"{char_title} {char_name}" if is_prefix == "True" else f"{char_name} {char_title}"
+    SPACE = ""
+    rprint(f"\t[underline]SERVER:[/underline]{SPACE:<6} {server}【{data_center}】")
     rprint(f"\t[underline]FREE COMPANY:[/underline] {char_free_company}")
-    rprint(f"\t[underline]NAME:[/underline] {char_name:>20}")
+    rprint(f"\t[underline]NAME:[/underline]{SPACE:<8} {title_name}")
     if char_bio != "-":
         rprint(f"\t\t[underline]BIO:[/underline] {char_bio}")
     rprint(
@@ -182,7 +184,7 @@ if __name__ == "__main__":
     if args.dump and "--dump" in argv or args.dump is None and "--dump" in argv:
         dump(data_dump_file_path=args.dump)
 
-    details()
+    character_details()
     if args.jobs:
         job_stats()
     if args.verbose:
