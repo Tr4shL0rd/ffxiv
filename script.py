@@ -108,7 +108,8 @@ def character_details():
     char_race            = char_data["Race"]
     char_job             = char_data["ActiveClassJob"]["UnlockedState"]["Name"]
     char_job_lvl         = char_data["ActiveClassJob"]["Level"]
-    char_title,is_prefix = tables.title(char_data["Title"])
+    char_title,is_prefix = tables.title(str(char_data["Title"]))
+    char_grand_company   = char_data["GrandCompany"]
     title_name = f"{char_title} {char_name}" if is_prefix == "True" else f"{char_name} {char_title}"
     SPACE = ""
     rprint(f"\t[underline]SERVER:[/underline]{SPACE:<6} {server}【{data_center}】")
@@ -120,6 +121,7 @@ def character_details():
         f"\t\t[underline]GENDER/RACE:[/underline] lv {char_job_lvl} {tables.gender(char_gender)} {char_job} {tables.race(char_race)}"
     )
     rprint(f"\t\t[underline]Name day:[/underline] {char_nameday}")
+    rprint(f"\t\t[underline]Grand Company:[/underline] {tables.grandCompany(char_grand_company['NameID'])}")
 
 
 def job_stats():
@@ -175,7 +177,7 @@ if __name__ == "__main__":
     if not data_file.endswith(".json"):
         data_file = f"{data_file}.json"
     if not args.offline:
-        URL = f"https://xivapi.com/character/{ID}"
+        URL = f"https://xivapi.com/character/{ID}?data=AC,FR,FC,FCM,PVP"
         request_data = requests.get(URL, timeout=5).json()
     elif args.offline:
         data_dump_file_path, request_data = check_local_file_date()
