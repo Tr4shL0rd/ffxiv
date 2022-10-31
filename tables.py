@@ -71,3 +71,12 @@ class Tables:
         #if jobs.get(job) is None:
         #    return f"ID {job} is not a valid race ID"
         return jobs.get(job) if job < len(jobs)+1 else "Other" 
+    def title(self,titleID):
+        import csv
+
+        with open("titles.csv", "r") as titles:
+            reader = csv.reader(titles)
+            for col in reader:
+                if col[0] == str(titleID):
+                    return (col[1],col[2])
+                    break

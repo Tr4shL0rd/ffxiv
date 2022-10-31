@@ -1,0 +1,658 @@
+0,"",False
+1,"The Insatiable",False
+2,"The True",False
+3,"Coeurlfist",True
+4,"Ironeater",True
+5,"Of the Vengeful Lance",False
+6,"The Godsbow",False
+7,"The White",False
+8,"Starcaller",True
+9,"The Exterminator",False
+10,"Notorious Monster Hunter",True
+11,"Honest Gillionaire",True
+12,"Ruthless Gillionaire",True
+13,"Warmonger",True
+14,"Archmage",True
+15,"Builder of the Realm",False
+16,"Provider of the Realm",False
+17,"Of the Golden Saw",False
+18,"Of the Golden Anvil",False
+19,"Of the Golden Hammer",False
+20,"Of the Golden Leaf",False
+21,"Of the Golden Hide",False
+22,"Of the Golden Needle",False
+23,"Of the Golden Lead",False
+24,"Of the Golden Ladle",False
+25,"Meadowbreaker",True
+26,"Forestbreaker",True
+27,"Desertbreaker",True
+28,"Of the Meadow Mines",False
+29,"Of the Forest Mines",False
+30,"Of the Desert Mines",False
+31,"Meadowreaper",True
+32,"Forestreaper",True
+33,"Desertreaper",True
+34,"Of the Meadow Grasses",False
+35,"Of the Forest Grasses",False
+36,"Of the Desert Grasses",False
+37,"Meadowcaster",True
+38,"Forestcaster",True
+39,"Desertcaster",True
+40,"Of the Meadow Pools",False
+41,"Of the Forest Pools",False
+42,"Of the Desert Pools",False
+43,"Carrier of the Cauldron",False
+44,"The Assimilator",False
+45,"Seeker of Blood",False
+46,"Seeker of Truth",False
+47,"Seeker of Skill",False
+48,"Seeker of Bounty",False
+49,"Sidestepper",True
+50,"Lord Protector",True
+51,"Lord Creator",True
+52,"Peacemaker",True
+53,"The Last Resort",False
+54,"The Sword of La Noscea",False
+55,"The Sword of the Shroud",False
+56,"The Sword of Thanalan",False
+57,"The Sword of Eorzea",False
+58,"The Shield of La Noscea",False
+59,"The Shield of the Shroud",False
+60,"The Shield of Thanalan",False
+61,"The Shield of Eorzea",False
+62,"Brother of the Broken Blade",True
+63,"The Warden's Wall",False
+64,"Bearer of the Horn",True
+65,"The Uncommitted",False
+66,"The Professional",False
+67,"Inquisitor",True
+68,"Divine Crusher",True
+69,"Stonesplitter",True
+70,"A Kobold's Worst Nightmare",False
+71,"An Ixal's Worst Nightmare",False
+72,"An Amalj'aa's Worst Nightmare",False
+73,"The Guardian of Aleport",False
+74,"The Guardian of Hyrstmill",False
+75,"The Guardian of the Golden Bazaar",False
+76,"The Wind of Aleport",False
+77,"The Wind of Hyrstmill",False
+78,"The Wind of the Golden Bazaar",False
+79,"The Hand of Aleport",False
+80,"The Hand of Hyrstmill",False
+81,"The Hand of the Golden Bazaar",False
+82,"Wild Thing",True
+83,"The Winter Wyrm",False
+84,"Messenger of Love",True
+85,"Royal Seneschal",True
+86,"Dreamseeker",True
+87,"Cascadier",True
+88,"Crystal Bearer",True
+89,"Stormlord",True
+90,"Serpentlord",True
+91,"Flamelord",True
+92,"The Stormsworn",False
+93,"The Serpentsworn",False
+94,"The Flamesworn",False
+95,"Stormcarrier",True
+96,"Serpentcarrier",True
+97,"Flamecarrier",True
+98,"Stormbringer",True
+99,"Serpentbringer",True
+100,"Flamebringer",True
+101,"Featherfoot",True
+102,"A Bo's Best Friend",True
+103,"Lightning",True
+104,"Cavalier",True
+105,"The Wanderer's Shadow",False
+106,"Green Eyes",False
+107,"The Strategist",False
+108,"The Reaper",False
+109,"Dungeon Master",True
+110,"Tempter of Fate",False
+111,"Elite Cascadier",True
+112,"Storm Puppy",True
+113,"Storm Howler",True
+114,"Storm Growler",True
+115,"Storm Hound",True
+116,"Storm Stalker",True
+117,"Storm Chaser",True
+118,"Naago's Friend",True
+119,"Naago's Partner",True
+120,"Wings of Steel",False
+121,"Wings of Fire",False
+122,"Serpent Puppy",True
+123,"Serpent Howler",True
+124,"Serpent Growler",True
+125,"Serpent Hound",True
+126,"Serpent Stalker",True
+127,"Serpent Chaser",True
+128,"Deep Canal Raider",True
+129,"Deep Canal Dweller",True
+130,"The Luckiest of Lords",False
+131,"Crimson Explorer",True
+132,"Flame Puppy",True
+133,"Flame Howler",True
+134,"Flame Growler",True
+135,"Flame Hound",True
+136,"Flame Stalker",True
+137,"Flame Chaser",True
+138,"The Legend",False
+139,"Raubahn's Left Arm",True
+140,"Of the Blue",False
+141,"Fashion Leader",False
+142,"The Ravenous Wolf",False
+143,"The Alpha Wolf",False
+144,"The Heart of the Party",False
+145,"Brother of Ash",True
+146,"Sylph-Friend",True
+147,"Treasure Hunter",True
+148,"789th Order Champion",True
+149,"Novv Clutchmate",True
+150,"The Ambitious Angler",False
+151,"The Meat Shield",False
+152,"The Meat Axe",False
+153,"Of the Stalwart Shield",False
+154,"Of the Stalwart Axe",False
+155,"Frontline Forerunner",True
+156,"Storm Forerunner",True
+157,"Flame Forerunner",True
+158,"Serpent Forerunner",True
+159,"Drone Sniper",True
+160,"Heliodrome Hero",True
+161,"Hunter for Hire",True
+162,"Seeker of Fortune",True
+163,"Seasoned Tracker",True
+164,"Bounty Hunter",True
+165,"Soldier of Fortune",True
+166,"Captain of the Hunt",False
+167,"Rafflesia Reaper",True
+168,"Melusine Mauler",True
+169,"The Avatar",False
+170,"Domitor",False
+171,"The Disassembler",True
+172,"Eversharp",False
+173,"Bearer of the Coffer",True
+174,"Defender of Eorzea",False
+175,"The Postman",False
+176,"Ehcatl Blackguard",True
+177,"The Negotiator",False
+178,"The Final Witness",False
+179,"Of Dragons Deep",False
+180,"Master Caster",True
+181,"The New Sun",False
+182,"The Shadow",False
+183,"Icebreaker",True
+184,"Of the Silver Lining",False
+185,"Gentleman",True
+186,"Cupid",True
+187,"Tamer of Steeds",False
+188,"The Unsevered",False
+189,"Slaughterhouse",True
+190,"The Hand of Mercy",False
+191,"The Light in Hand",False
+192,"The Light of the Land",False
+193,"Z",False
+194,"Golemancer",True
+195,"Gambler",True
+196,"High Roller",True
+197,"Chocobo Breeder",True
+198,"Chocobo Trainer",True
+199,"Bug Boy",True
+200,"Senior Jockey",True
+201,"Veteran Jockey",True
+202,"The First Across",False
+203,"Deck Holder",True
+204,"Deck Hoarder",True
+205,"The Trinity",False
+206,"Duelist",True
+207,"Keymaster",True
+208,"The Fungah",False
+209,"Moneybags",True
+210,"Raiser of Mountains",False
+211,"Bearer of the Torch",False
+212,"Postmaster",True
+213,"Half-boiled Hero",True
+214,"Unbeliever",True
+215,"The Redeemed",False
+216,"Nidhogg Slayer",True
+217,"Of the Silver Fuller",False
+218,"Imperial Nuisance",False
+219,"Under-archon",True
+220,"The End of Ascalon",True
+221,"Snake in the Grass",True
+222,"The Oathkeeper",False
+223,"Of the 14th Chakra",False
+224,"The Mythril Heart",False
+225,"The Azure Dragoon",False
+226,"Skysinger",False
+227,"Pure White",True
+228,"Annihilator",True
+229,"Dreadspawn",False
+230,"Nymian Marine",True
+231,"The Darkest Shadow",False
+232,"Blackblood",False
+233,"Liberator",True
+234,"Stargazer",True
+235,"Illuminati Quencher",True
+236,"Finder of False Gods",False
+237,"Lighter than Air",True
+238,"",False
+239,"Grandmaster of War",True
+240,"Grandmaster of Magic",True
+241,"Dark Driver",True
+242,"Of the Stalwart Sword",False
+243,"Keeper of Knowledge",True
+244,"Canal Dweller",True
+245,"Canal Lord",True
+246,"The Necromancer",False
+247,"",False
+248,"Grandmaster of the Hand",True
+249,"Grandmaster of the Land",True
+250,"Molder of Masterpieces",True
+251,"Amasser of Masterpieces",True
+252,"Business Associate",True
+253,"Master Carpenter",True
+254,"Master Blacksmith",True
+255,"Master Armorer",True
+256,"Master Goldsmith",True
+257,"Master Leatherworker",True
+258,"Master Weaver",True
+259,"Master Alchemist",True
+260,"Master Culinarian",True
+261,"Master Miner",True
+262,"Master Botanist",True
+263,"Master Fisher",True
+264,"The Fortunate",False
+265,"Good Samaritan",True
+266,"Minion Collector",True
+267,"Minion Master",True
+268,"Mammeteer",True
+269,"Prince of Verminion",False
+270,"Lord of Verminion",False
+271,"House Fortemps Knight",False
+272,"Sky Pirate",True
+273,"The Noumenon",False
+274,"Sundrop Dancer",True
+275,"Myth Breaker",True
+276,"Veteran Explorer",True
+277,"Special Advisor",True
+278,"Notorious Monster Slayer",True
+279,"Hungry Wolf",True
+280,"The Devourer",False
+281,"The Unmoving",False
+282,"The Unrelenting",False
+283,"The Unseen",False
+284,"The Unleashed",False
+285,"The Undamaged",False
+286,"Mentor",True
+287,"Mentor of Mentors",True
+288,"Carrier of the Kettle",True
+289,"The Gear of Change",False
+290,"Allthoughts",False
+291,"The Newmind",False
+292,"The Dragonsong",False
+293,"Polis Raider",True
+294,"Polis Dweller",True
+295,"Polis Lord",True
+296,"Pom Friend",True
+297,"Leader of the Pack",True
+298,"Beta Wolf",True
+299,"Hunter Wolf",True
+300,"Bronze Wolf",True
+301,"Silver Wolf",True
+302,"Gold Wolf",True
+303,"Platinum Wolf",True
+304,"Diamond Wolf",True
+305,"Of the First Pack",False
+306,"Of the Second Pack",False
+307,"Of the Hungry Pack",False
+308,"Of the Bronze Pack",False
+309,"Of the Silver Pack",False
+310,"Of the Gold Pack",False
+311,"Of the Platinum Pack",False
+312,"Of the Diamond Pack",False
+313,"The Knight of Glory",False
+314,"The Chief Mourner",False
+315,"The Wings of Time",False
+316,"Surrenderer of Souls",False
+317,"Khloe's Friend",True
+318,"Khloe's Best Friend",True
+319,"Hero of Gelmorra",False
+320,"Lightbringer",False
+321,"Lonely Explorer",True
+322,"The Lucky",False
+323,"Of the Sixth Sense",False
+324,"Corpse Dancer",True
+325,"Makai Master",True
+326,"Garo",True
+327,"Makai Monk",True
+328,"Barago",True
+329,"Dan",True
+330,"Makai Bard",True
+331,"Makai Black Mage",True
+332,"Makai White Mage",True
+333,"Zero",True
+334,"Makai Summoner",True
+335,"Makai Scholar",True
+336,"Kiba",True
+337,"Makai Machinist",True
+338,"Makai Astrologian",True
+339,"Moonlifter",True
+340,"The Finest Pupil's Ally",False
+341,"Fatewalker",True
+342,"Of the Holy Body",False
+343,"Gigi's Best Friend",True
+344,"Tamer of the Undying Flame",False
+345,"Mortal Fist",True
+346,"Rhalgr's Right Fist",False
+347,"Tablesetter",True
+348,"Halone's Cup Bearer",False
+349,"Zhloe's Friend",True
+350,"Zhloe's Best Friend",True
+351,"Survivor of the Song",False
+352,"Ijin Traveler",True
+353,"Confederate",True
+354,"Adversary",True
+355,"Steppe Warrior",True
+356,"The Returned",False
+357,"Lyse's Right Fist",True
+358,"The Liberator",False
+359,"Deltascape Deleter",True
+360,"Ul Cup Champion",True
+361,"The Fistful",False
+362,"Loved by the Axe",False
+363,"The Blood Dragoon",False
+364,"Of the True Autumn",False
+365,"Padjal Protector",True
+366,"Gembreaker",True
+367,"The First Caller",False
+368,"Keeper of the Lilacs",True
+369,"Eorzean Ninja",True
+370,"Of the Swirling Abyss",False
+371,"The Howler",False
+372,"Of the Eastern Skies",False
+373,"The Red",False
+374,"Muso",False
+375,"God of War",True
+376,"God of Magic",True
+377,"God of the Hand",True
+378,"God of the Land",True
+379,"Of the Longest Hunt",False
+380,"Of the Endless Hunt",False
+381,"Thrillseeker",True
+382,"Ultimate Thrillseeker",True
+383,"Canal Raider",True
+384,"Hiruko Hunter",True
+385,"Heavenly Gate Crasher",True
+386,"True Hero",True
+387,"Lone Hero",True
+388,"Hoarder",True
+389,"Vanguard",True
+390,"Kurenai's Best Friend",True
+391,"Kurenai's Partner",True
+392,"Under the Moonlight",False
+393,"Siltwater Socialite",True
+394,"Matchmaker",True
+395,"Eorzean Ninja Warrior",True
+396,"Calamatologist",True
+397,"The Ultimate Legend",False
+398,"Monster Hunter",True
+399,"FRC 2018 Champion",True
+400,"FRC 2018 Finalist",True
+401,"FRC 2018 Ranker",True
+402,"Prelude in Violet",True
+403,"Philanthropist",False
+404,"Altar Boy",True
+405,"The Devout",False
+406,"Invoker of Gods",True
+407,"Grandmaster Caster",True
+408,"Kyubi Tamer",False
+409,"Mahjong Enthusiast",True
+410,"Mahjong Master",True
+411,"Little Piggy",True
+412,"Tough Customer",True
+413,"Blue Blood",True
+414,"Mask of the Blue",False
+415,"Perfect Blue",True
+416,"Eurekan Explorer",True
+417,"A Requiem For Heroes",False
+418,"The Soboro",False
+419,"Kageyama Killer",False
+420,"Kingsglaive",True
+421,"Lord of the Fetch",False
+422,"Soul of War",True
+423,"Soul of Magic",True
+424,"Soul of the Craft",True
+425,"Soul of the Harvest",True
+426,"Outlander",True
+427,"The Fae-touched",False
+428,"Seeker of Hidden Truths",True
+429,"Of the Sunless Sea",False
+430,"Enemy of Innocence",True
+431,"Shadowbringer",True
+432,"Sworn Protector",True
+433,"The Heart's Beat",False
+434,"Living Memory",True
+435,"Bulwark between Worlds",True
+436,"The Transcendent",False
+437,"Worldcleaver",True
+438,"Bolt from the Black",True
+439,"The Song upon the Wind",False
+440,"Firstblessed",True
+441,"Of Stranger Shadow",False
+442,"Farcaller",True
+443,"Knower of Twin Worlds",True
+444,"Shadow of the Other",True
+445,"The Boundless Dark",False
+446,"The Shot Heard Across Worlds",False
+447,"Distant Stargazer",True
+448,"Dualistic Duelist",True
+449,"Samurai in a Strange Land",True
+450,"Wandering Vanguard",True
+451,"Riftdancer",True
+452,"Otherworld Smith",True
+453,"Otherworld Artisan",True
+454,"Otherworld Apothecary",True
+455,"Otherworld Seeker",True
+456,"Otherworld Angler",True
+457,"The Multifaceted",False
+458,"Trusted Friend",True
+459,"The Invisible Hand",False
+460,"Charming Brute",True
+461,"The Fabulously Feral",False
+462,"Of Unyielding Oath",False
+463,"Of Unyielding Steel",False
+464,"Of Unyielding Principle",False
+465,"Of Unyielding Lealty",False
+466,"Dungeon Raider",True
+467,"Dungeon Dweller",True
+468,"Dungeon Lord",True
+469,"Kindred Sword",True
+470,"",False
+471,"",False
+472,"",False
+473,"",False
+474,"",False
+475,"",False
+476,"Of Virtuous Deeds",False
+477,"Kai-Shirr's Best Mate",True
+478,"Honeybee",True
+479,"Sweet Dreamer",True
+480,"The Perfect Legend",False
+481,"Blue to the Bone",True
+482,"Blue Luminary",True
+483,"Masked of the Round",True
+484,"Unbound Blue",True
+485,"Blue Justice",True
+486,"The Battleforged",False
+487,"Champion of the Blue",True
+488,"Saint of the Firmament",True
+489,"Beatus of the Firmament",True
+490,"Frame of the Firmament",True
+491,"Forge of the Firmament",True
+492,"Hammer of the Firmament",True
+493,"Jewel of the Firmament",True
+494,"Knife of the Firmament",True
+495,"Weave of the Firmament",True
+496,"Panacea of the Firmament",True
+497,"Pan of the Firmament",True
+498,"Pick of the Firmament",True
+499,"Hatchet of the Firmament",True
+500,"Rod of the Firmament",True
+501,"The Hand of Creation",False
+502,"Divine Provider",True
+503,"The Nest's Own Carpenter",False
+504,"The Nest's Own Blacksmith",False
+505,"The Nest's Own Armorer",False
+506,"The Nest's Own Goldsmith",False
+507,"The Nest's Own Leatherworker",False
+508,"The Nest's Own Weaver",False
+509,"The Nest's Own Alchemist",False
+510,"The Nest's Own Culinarian",False
+511,"The Nest's Own Miner",False
+512,"The Nest's Own Botanist",False
+513,"The Nest's Own Fisher",False
+514,"Fortune's Favored Kupo",True
+515,"Ocean Fisher",True
+516,"Octopus Traveler",True
+517,"Shark Hunter",True
+518,"Jellyfish Fanatic",True
+519,"Sea Dragoon",True
+520,"Echo of a Fallen Star",True
+521,"Ronkan Historian",True
+522,"A Dragon's Best Friend",True
+523,"Tinker Tutor",True
+524,"Partner in Teatime",True
+525,"Vrai Ami",True
+526,"Tank Technician",True
+527,"Shepherd to the Stars",True
+528,"Featherfall's Finest Carpenter",True
+529,"Featherfall's Finest Blacksmith",True
+530,"Featherfall's Finest Armorer",True
+531,"Featherfall's Finest Goldsmith",True
+532,"Featherfall's Finest Leatherworker",True
+533,"Featherfall's Finest Weaver",True
+534,"Featherfall's Finest Alchemist",True
+535,"Featherfall's Finest Culinarian",True
+536,"Featherfall's Finest Miner",True
+537,"Featherfall's Finest Botanist",True
+538,"Featherfall's Finest Fisher",True
+539,"The Decisive Blow",False
+540,"Skirmisher",True
+541,"Siege Liege",True
+542,"Gabriel's Downfall",True
+543,"Queller of Beasts",True
+544,"The Death of Flame",False
+545,"Sword of the South",True
+546,"Guardian Angel",True
+547,"Saint of the Firmament",True
+548,"Beatus of the Firmament",True
+549,"Writer of Histories",True
+550,"Of the Truest Blue",False
+551,"Blue Ranger",True
+552,"The Azure and Omega",False
+553,"Balloon Catcher",True
+554,"Deadliest Catcher",True
+555,"Manta Maniac",True
+556,"World-class Troller",True
+557,"Saint of the Firmament",True
+558,"Beatus of the Firmament",True
+559,"Tournament Leader",True
+560,"Secret Finder",True
+561,"Secret Keeper",True
+562,"Gaolbreaker",True
+563,"Master of the Sea",True
+564,"Delubrum Delver",True
+565,"The Risensung Carpenter",False
+566,"The Risensung Blacksmith",False
+567,"The Risensung Armorer",False
+568,"The Risensung Goldsmith",False
+569,"The Risensung Leatherworker",False
+570,"The Risensung Weaver",False
+571,"The Risensung Alchemist",False
+572,"The Risensung Culinarian",False
+573,"The Risensung Miner",False
+574,"The Risensung Botanist",False
+575,"The Risensung Fisher",False
+576,"Jack of All Cards",True
+577,"Speed Demon",True
+578,"The Indefatigable",False
+579,"Lord of Far Waters",True
+580,"Big Fish",True
+581,"Charlemend's Angel",True
+582,"Lifesaver",True
+583,"Dawn Treader",True
+584,"Witness to the Dark Apocalypse",True
+585,"Dalriada Raider",True
+586,"The Hypertuned",False
+587,"Commander Conqueror",True
+588,"Lyon Tamer",True
+589,"Hero of Zadnor",True
+590,"Gunnhildr's Blade",True
+591,"The Emblazoned",False
+592,"Queen's Elect",True
+593,"At War's Horizon",True
+594,"At Magic's Horizon",True
+595,"At Art's Horizon",True
+596,"At Land's Horizon",True
+597,"Magus Resister",True
+598,"Moonwalker",True
+599,"Lightingway",True
+600,"Vrtra's Valiant",True
+601,"Elpiphoros",True
+602,"Hope's Legacy",True
+603,"Endwalker",True
+604,"Lemures",True
+605,"The Sagacious",False
+606,"Erudite Smith",True
+607,"Erudite Artisan",True
+608,"Erudite Apothecary",True
+609,"Erudite Seeker",True
+610,"Erudite Angler",True
+611,"Honorary Academic",True
+612,"The Seventh Dawn",False
+613,"Of Unbreakable Oath",False
+614,"Of Unbreakable Steel",False
+615,"Of Unbreakable Principle",False
+616,"Of Unbreakable Lealty",False
+617,"Gleaning Machine",True
+618,"The Keen",False
+619,"The Excruciatingly Excited",False
+620,"On the Hype Tron",False
+621,"Lunaire Riche",True
+622,"Patron of the Fates",True
+623,"The Arbiter",False
+624,"Bronze Bearer",True
+625,"Silver Bearer",True
+626,"Gold Bearer",True
+627,"Platinum Bearer",True
+628,"Diamond Bearer",True
+629,"Crystal Keeper",True
+630,"Of the Final Conflict",False
+631,"Of the Endless Conflict",False
+632,"Of the Rising Conflict",False
+633,"Hippo Hero",True
+634,"Ami d'Améliance",True
+635,"Academic Advocate",True
+636,"The Heavens' Legend",False
+637,"Newfound Adventurer",True
+638,"Blessed Relief",True
+639,"Makai Samurai",True
+640,"Makai Red Mage",True
+641,"Makai Gunbreaker",True
+642,"Makai Dancer",True
+643,"Makai Reaper",True
+644,"Makai Sage",True
+645,"Sanctuary Seeker",True
+646,"Trader of Paradise",True
+647,"Cieldalaes Connoisseur",True
+648,"Voidbound",True
+649,"Of the Final Conflict",False
+650,"Of the Endless Conflict",False
+651,"Of the Rising Conflict",False
+652,"Of the Final Conflict",False
+653,"Of the Endless Conflict",False
+654,"Of the Rising Conflict",False
+655,"Barista at the End of the Universe",True
+656,"Sultana's Shadow",True
+657,"Infamy of Sil'dih",True
