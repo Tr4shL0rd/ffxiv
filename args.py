@@ -5,13 +5,19 @@ class Args:
         pass
 
     def ff_args(self):
-        parser = argparse.ArgumentParser()
+        parser = argparse.ArgumentParser(description="Lodestone Character Parser")
 
         parser.add_argument(
             "-v","--verbose",
             dest="verbose",
             action="store_true",
             help="verbose output"
+        )
+        parser.add_argument(
+            "--debug",
+            dest="debug",
+            action="store_true",
+            help="DEBUG"
         )
         parser.add_argument(
             "-j","--jobs",
@@ -21,7 +27,7 @@ class Args:
         )
         parser.add_argument(
             "--dump",
-            dest="dump",
+            dest="dump_path",
             default="data.json",
             nargs="?",
             help="dumps a json file containing all request data"
@@ -33,7 +39,7 @@ class Args:
             help="uses local data"
         )
         parser.add_argument(
-            "--update","-u",
+            "-u","--update",
             dest="update",
             action="store_true",
             help="updates local data file"
