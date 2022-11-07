@@ -7,10 +7,9 @@ from rich import print as rprint
 from args import Args
 from tables import Tables
 
-
 def dump(data_dump_file_path, update=False):
     if data_dump_file_path is None:
-        data_dump_file_path = data_file#"data.json"
+        data_dump_file_path = data_file
 
     if not data_dump_file_path.endswith(".json"):
         data_dump_file_path = f"{data_dump_file_path.strip()}.json"
@@ -25,7 +24,6 @@ def dump(data_dump_file_path, update=False):
         else:
             return
 
-
 def check_for_local_small_changes(update: bool = False):
     if update:
         dump(None, update)
@@ -37,14 +35,17 @@ def check_for_local_small_changes(update: bool = False):
             "[red underline]WARNING: COULD NOT FIND DATA FILE![/red underline]\n[red underline]creating new...[/red underline]"
         )
         dump(None)
-            
+    local_date_year,local_date_month,local_date_day = epoch_to_human(local_data["Character"]["ParseDate"]).split("/")
+    last_update = f"{local_date_day}/{local_date_month}/{local_date_year}"
     local_exp_data = local_data["Character"]["ClassJobs"]
     client_exp_data = request_data["Character"]["ClassJobs"]
     local_exp = [local_exp_dat["ExpLevel"] for local_exp_dat in local_exp_data]
     client_exp = [client_exp_dat["ExpLevel"] for client_exp_dat in client_exp_data]
     for i in range(len(client_exp)):
         if client_exp[i] != local_exp[i]:
-            update_data = input("DATA IS OUT OF DATE!\nUpdate? (Y/n): ").lower() or "y"
+            print(f"DATA IS OUT OF DATE!\n[LAST UPDATE: {last_update}]")
+            print()
+            update_data = input("Update? (Y/n): ").lower() or "y"
             if update_data == "y":
                 dump(None)
             else:
@@ -92,6 +93,7 @@ def current_job():
 
 def character_details():
     char_data = request_data.get("Character")
+
     if char_data is None:
         rprint(f"[red underline]ID {args.id} could not be found![/red underline]")
         exit()
@@ -100,28 +102,49 @@ def character_details():
     server               = char_data["Server"]
     data_center          = char_data["DC"]
 
-    char_name            = char_data["Name"]
-    char_free_company    = char_data["FreeCompanyName"]
-    char_bio             = char_data["Bio"]
-    char_nameday         = char_data["Nameday"]
-    char_gender          = char_data["Gender"]
-    char_race            = char_data["Race"]
-    char_job             = char_data["ActiveClassJob"]["UnlockedState"]["Name"]
-    char_job_lvl         = char_data["ActiveClassJob"]["Level"]
-    char_title,is_prefix = tables.title(str(char_data["Title"]))
-    char_grand_company   = char_data["GrandCompany"]
+    char_name              = char_data["Name"]
+    char_free_company      = char_data["FreeCompanyName"]
+    char_bio               = char_data["Bio"]
+    char_nameday           = char_data["Nameday"]
+    char_gender            = char_data["Gender"]
+    char_race              = char_data["Race"]
+    char_job               = char_data["ActiveClassJob"]["UnlockedState"]["Name"]
+    char_job_lvl           = char_data["ActiveClassJob"]["Level"]
+    char_title,is_prefix   = tables.title(str(char_data["Title"]))
+    char_grand_company     = char_data["GrandCompany"]
+    char_achievement_score = request_data["Achievements"]["Points"]
+    minions                = request_data["Minions"]
+    mounts                 = request_data["Mounts"]
     title_name = f"{char_title} {char_name}" if is_prefix == "True" else f"{char_name} {char_title}"
     SPACE = ""
     rprint(f"\t[underline]SERVER:[/underline]{SPACE:<6} {server}【{data_center}】")
     rprint(f"\t[underline]FREE COMPANY:[/underline] {char_free_company}")
     rprint(f"\t[underline]NAME:[/underline]{SPACE:<8} {title_name}")
     if char_bio != "-":
-        rprint(f"\t\t[underline]BIO:[/underline] {char_bio}")
+        rprint(f"\t[underline]BIO:[/underline] {char_bio}")
     rprint(
-        f"\t\t[underline]GENDER/RACE:[/underline] lv {char_job_lvl} {tables.gender(char_gender)} {char_job} {tables.race(char_race)}"
+        f"\t[underline]GENDER/RACE:[/underline] lv {char_job_lvl} {tables.gender(char_gender)} {char_job} {tables.race(char_race)}"
     )
-    rprint(f"\t\t[underline]Name day:[/underline] {char_nameday}")
-    rprint(f"\t\t[underline]Grand Company:[/underline] {tables.grandCompany(char_grand_company['NameID'])}")
+    rprint(f"\t[underline]Name day:[/underline] {char_nameday}")
+    rprint(f"\t[underline]Grand Company:[/underline] {tables.grandCompany(char_grand_company['NameID'])}")
+    rprint(f"\t[underline]Achievement Score:[/underline] {char_achievement_score}")
+    rprint(f"\t[underline]Minions:[/underline] {len(minions)}")
+    rprint(f"\t[underline]Mounts:[/underline] {len(mounts)}")
+    if args.verbose:
+        minions_details()
+        mounts_details()
+
+def minions_details():
+    rprint("[green underline]MINIONS[/green underline]")
+    minions = request_data["Minions"]
+    for minion in minions:
+        print(f"\t{minion['Name']}")  
+
+def mounts_details():
+    rprint("[green underline]MOUNTS[/green underline]")
+    minions = request_data["Mounts"]
+    for minion in minions:
+        print(f"\t{minion['Name']}")  
 
 
 def job_stats():
@@ -161,12 +184,10 @@ def job_stats():
                 f'\tLVL {lvl["LVL"]} {job}\n\t\t[EXP LEFT: {job_exp_left} | {job_exp_percent}% filled | Total Exp: {job_exp}]'
             )
 
-def verbose():
+def debug():
     char_data = request_data["Character"]
     print(json.dumps(char_data,indent=4))
     
-
-
 
 if __name__ == "__main__":
     args = Args().ff_args()
@@ -177,17 +198,17 @@ if __name__ == "__main__":
     if not data_file.endswith(".json"):
         data_file = f"{data_file}.json"
     if not args.offline:
-        URL = f"https://xivapi.com/character/{ID}?data=AC,FR,FC,FCM,PVP"
+        URL = f"https://xivapi.com/character/{ID}?data=AC,FR,FC,FCM,PVP,MIMO"
         request_data = requests.get(URL, timeout=5).json()
     elif args.offline:
         data_dump_file_path, request_data = check_local_file_date()
     if not args.no_local: check_for_local_small_changes(args.update)
 
-    if args.dump and "--dump" in argv or args.dump is None and "--dump" in argv:
-        dump(data_dump_file_path=args.dump)
+    if args.dump_path and "--dump" in argv or args.dump_path is None and "--dump" in argv:
+        dump(data_dump_file_path=args.dump_path)
 
     character_details()
     if args.jobs:
         job_stats()
-    if args.verbose:
-        verbose()
+    if args.debug:
+        debug()
