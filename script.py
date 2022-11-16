@@ -115,21 +115,19 @@ def character_details():
     char_achievement_score = request_data["Achievements"]["Points"]
     minions                = request_data["Minions"]
     mounts                 = request_data["Mounts"]
-    title_name = f"{char_title} {char_name}" if is_prefix == "True" else f"{char_name} {char_title}"
+    title_name             = f"{char_title} {char_name}" if is_prefix == "True" else f"{char_name} {char_title}"
     SPACE = ""
     rprint(f"\t[underline]SERVER:[/underline]{SPACE:<6} {server}【{data_center}】")
     rprint(f"\t[underline]FREE COMPANY:[/underline] {char_free_company}")
     rprint(f"\t[underline]NAME:[/underline]{SPACE:<8} {title_name}")
     if char_bio != "-":
         rprint(f"\t[underline]BIO:[/underline] {char_bio}")
-    rprint(
-        f"\t[underline]GENDER/RACE:[/underline] lv {char_job_lvl} {tables.gender(char_gender)} {char_job} {tables.race(char_race)}"
-    )
-    rprint(f"\t[underline]Name day:[/underline] {char_nameday}")
-    rprint(f"\t[underline]Grand Company:[/underline] {tables.grandCompany(char_grand_company['NameID'])}")
-    rprint(f"\t[underline]Achievement Score:[/underline] {char_achievement_score}")
-    rprint(f"\t[underline]Minions:[/underline] {len(minions)}")
-    rprint(f"\t[underline]Mounts:[/underline] {len(mounts)}")
+    rprint(f"\t{' '*2}[underline]GENDER/RACE:[/underline] lv {char_job_lvl} {tables.gender(char_gender)} {char_job} {tables.race(char_race)}")
+    rprint(f"\t{' '*2}[underline]Name day:[/underline] {char_nameday}")
+    rprint(f"\t{' '*2}[underline]Grand Company:[/underline] {tables.grandCompany(char_grand_company['NameID'])}")
+    rprint(f"\t{' '*2}[underline]Achievement Score:[/underline] {char_achievement_score}")
+    rprint(f"\t{' '*2}[underline]Minions:[/underline] {len(minions)}")
+    rprint(f"\t{' '*2}[underline]Mounts:[/underline] {len(mounts)}")
     if args.verbose:
         minions_details()
         mounts_details()
